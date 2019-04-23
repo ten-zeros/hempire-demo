@@ -4,8 +4,7 @@
   "description": "example of hempire website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "gulp watch",
+    "start": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kamto",
