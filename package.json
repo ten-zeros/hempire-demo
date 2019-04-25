@@ -4,7 +4,9 @@
   "description": "example of hempire website",
   "main": "index.js",
   "scripts": {
-    "start": "gulp default",
+    "start": "gulp prod",
+    "build": "gulp build",
+    "prod": "gulp prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "kamto",
@@ -17,10 +19,13 @@
     "gulp": "^4.0.1",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
+    "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.7",
+    "gulp-live-server": "0.0.31",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
+    "gulp-serve": "^1.4.0",
     "jquery": "^3.4.0",
     "merge-stream": "^1.0.1",
     "path": "^0.12.7"
