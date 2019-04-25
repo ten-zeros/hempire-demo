@@ -11,7 +11,9 @@ nodeJS
 created by kamto
 
 
-DEVELOPMENT
+Development
+npm build
 
 
 Production
+npm start
