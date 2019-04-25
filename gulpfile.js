@@ -17,7 +17,7 @@ const gls = require("gulp-live-server");
 // Load package.json for banner
 const pkg = require('./package.json');
 
-var p = process.env.NODE_ENV || 3000;
+var p = process.env.PORT || 3000;
 
 // Set the banner content
 const banner = ['/*!\n',
