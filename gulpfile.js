@@ -98,11 +98,7 @@ function watchFiles() {
 
 //Serve production
 function server() {
-<<<<<<< HEAD
   var server = gls.static('.', p);
-=======
-  var server = gls.static('.', 3000);
->>>>>>> 92180afc1ba37214c6855e9f20605e268b83de9e
   server.start();
 }
 
