@@ -11,6 +11,8 @@ const merge = require("merge-stream");
 const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
+const connect = require("gulp-connect");
+const gls = require("gulp-live-server");
 
 // Load package.json for banner
 const pkg = require('./package.json');
@@ -92,10 +94,17 @@ function watchFiles() {
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
+//Serve production
+function server() {
+  var server = gls.static('.', 3000);
+  server.start();
+}
+
 // Define complex tasks
 const vendor = gulp.series(clean, modules);
 const build = gulp.series(vendor, css);
 const watch = gulp.series(build, gulp.parallel(watchFiles, browserSync));
+const production = gulp.series(build, gulp.parallel(watchFiles, server));
 
 // Export tasks
 exports.css = css;
@@ -104,3 +113,4 @@ exports.vendor = vendor;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;
+exports.prod = production;
