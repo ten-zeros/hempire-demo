@@ -4,16 +4,17 @@ Quick Mockup of website for Hempire Innovations LLC
 
 
 Made with:
+> gulp
+> nodeJS
 
-gulp
-nodeJS
+To Run:
 
-created by kamto
-
-
-Development
+_Development_
 npm build
 
 
-Production
+_Production_
 npm start
+
+
+THIS IS NOW ARCHIVED
